@@ -1,0 +1,90 @@
+.tree-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Контейнер для вводу значень */
+  .tree-input-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Стилі для вузлів дерева */
+  .tree-node {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 50%; /* Круглі вузли */
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+  }
+  
+  /* Стилі для кнопок управління */
+  .tree-controls {
+    margin: 10px;
+  }
+  
+  /* Стилі для вузлів в React Flow */
+  .react-flow__node {
+    color: rgb(0, 0, 0) !important;
+    border-radius: 50% !important; /* Круглі вузли */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;  /* Збільшено діаметр вузлів */
+    height: 60px; /* Збільшено діаметр вузлів */
+    font-size: 14px;  /* Зменшено розмір шрифта */
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тінь для вузлів */
+  }
+  
+  /* Стилі для ребер у React Flow */
+  .react-flow__edge {
+    stroke: #a0a0a0;
+    stroke-width: 2;
+    fill: none;
+  }
+  
+  /* Анімація для ребер */
+  .react-flow__edge.animated {
+    stroke-dasharray: 5, 5;
+  }
+  
+  /* Стилі для фону та елементів управління */
+  .react-flow__background {
+    fill: #f1f1f1;
+  }
+  
+  .react-flow__controls {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+  }
+
+  .tree-container .react-flow__node {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .react-flow-container {
+    height: 700px;
+    width: 1000px;
+  }
+  
+  .node-orange {
+    background-color: orange !important;
+    transition: background-color 0.5s;
+  }
+  
+  .node-blue {
+    background-color: blue !important;
+    transition: background-color 0.5s;
+  }
+  
+  .node-green {
+    background-color: green !important;
+    transition: background-color 0.5s;
+  }

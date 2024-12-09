@@ -1,0 +1,94 @@
+/* Загальні стилі для контейнеру */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+canvas {
+  border: 2px solid #2196f3;
+  background-color: #f0f0f0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для кнопок */
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #2196f3;
+  background-color: #2196f3;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1976d2;
+}
+
+button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
+
+/* Стилі для таблиці компонентів */
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 80%;
+  text-align: left;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #2196f3;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #d1e7ff;
+}
+
+table td {
+  font-size: 14px;
+}
+
+/* Підсвітка для активного елемента */
+.active-node {
+  transition: all 0.5s ease;
+  border: 3px solid #f50057;
+  box-shadow: 0 0 10px rgba(245, 0, 87, 0.7);
+}
+
+.active-edge {
+  transition: all 0.3s ease;
+  stroke: #2196f3;
+  stroke-width: 3px;
+}
+
+/* Стиль для фонового ефекту анімації вузлів */
+.node-animation {
+  transition: all 0.6s ease;
+}
+
+.node {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 2;
+}
+
+.node:hover {
+  fill: #e57373;
+  cursor: pointer;
+}

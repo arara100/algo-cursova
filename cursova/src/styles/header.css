@@ -1,0 +1,14 @@
+.header .browser-bar {
+    background-color: #e0e0e0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .header .circle {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
