@@ -27,7 +27,7 @@ export const tarjan = (graph) => {
       .forEach((edge) => {
         if (index[edge.to] === undefined) {
           steps.push({ type: "edge", edge: edge });
-          dfs(nodes.find((n) => n.id === edge.to));
+          dfs(nodes.find((n) => node.id === edge.to));
           low[node.id] = Math.min(low[node.id], low[edge.to]);
         } else if (onStack[edge.to]) {
           low[node.id] = Math.min(low[node.id], index[edge.to]);
